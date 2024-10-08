@@ -1,0 +1,88 @@
+workflows:
+    react-native-android:
+        name: React Native Android
+        max_build_duration: 120
+        # instance_type: mac_mini_m1
+        environment:
+          android_signing:
+             - CM_KEYSTORE
+        #   vars:
+        #     PACKAGE_NAME: "io.codemagic.sample.reactnative" # <-- Put your package name here e.g. com.domain.myapp
+          node: 20.14.0
+          npm: 10.7.0
+          xcode: 15.4
+          # java: 17
+          # xcode: 15.2
+        # cache:
+        #   cache_paths:
+        #     - $CM_BUILD_DIR/node_modules
+        scripts:
+            - name: Install npm dependencies
+              script: |         
+                 npm install --legacy-peer-deps
+                 npm uninstall @rnmapbox/maps
+            - name: Set Android SDK location
+              script: |
+                echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"            
+            - name: Build Android release
+              script: |
+                cd android
+                ./gradlew bundleRelease 
+        artifacts:
+            - android/app/build/outputs/**/*.aab
+            - android/app/build/outputs/**/*.apk
+    react-native-ios:
+        name: React Native iOS
+        max_build_duration: 120
+        instance_type: mac_mini_m2
+        # integrations:
+        #   app_store_connect: codemagic
+        environment:
+          ios_signing:
+            distribution_type: app_store
+            bundle_identifier: io.cm.expensify.chat
+          vars:
+            XCODE_WORKSPACE: "NewExpensify.xcworkspace" # <-- Put the name of your Xcode workspace here
+            XCODE_SCHEME: "NewExpensify" # <-- Put the name of your Xcode scheme here
+            APP_ID: 1555555551 # <-- Put the app id number here. This is found in App Store Connect > App > General > App Information
+          node: 20.10.0
+          npm: 10.2.3
+          xcode: 15.3
+  
+          # xcode: latest
+          # cocoapods: default
+        cache:
+          cache_paths:
+            - $HOME/Library/Caches/CocoaPods
+            - $CM_BUILD_DIR/node_modules
+        scripts:
+            - name: Install npm dependencies
+              script: |
+                npm install --legacy-peer-deps
+            - name: Install CocoaPods dependencies
+              script: |
+                cd ios && pod install
+            # - name: Set Info.plist values
+            #   script: |
+            #     # This allows publishing without manually answering the question about encryption 
+            #     PLIST=$CM_BUILD_DIR/$XCODE_SCHEME/Info.plist
+            #     PLIST_BUDDY=/usr/libexec/PlistBuddy
+            #     $PLIST_BUDDY -c "Add :ITSAppUsesNonExemptEncryption bool false" $PLIST
+            - name: Set up code signing settings on Xcode project
+              script: |
+                xcode-project use-profiles --project=$CM_BUILD_DIR/ios/NewExpensify.xcodeproj
+            # - name: Increment build number
+            #   script: |
+            #     cd $CM_BUILD_DIR/ios
+            #     LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_ID")
+            #     agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
+            - name: Build ipa for distribution
+              script: |
+                xcode-project build-ipa \
+                  --workspace "$CM_BUILD_DIR/ios/$XCODE_WORKSPACE" \
+                  --scheme "$XCODE_SCHEME"
+        artifacts:
+            - build/ios/ipa/*.ipa
+            - /tmp/xcodebuild_logs/*.log
+            - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+            - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM

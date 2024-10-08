@@ -27,7 +27,7 @@ workflows:
             - name: Build Android release
               script: |
                 cd android
-                ./gradlew bundleRelease 
+                ./gradlew assembleDebug 
         artifacts:
             - android/app/build/outputs/**/*.aab
             - android/app/build/outputs/**/*.apk

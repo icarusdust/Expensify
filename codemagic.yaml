@@ -21,7 +21,7 @@ workflows:
         pre_clone_scripts:
           - name: Scripts before repository cloned
             script:
-              echo 
+              echo $TEST
         scripts:
             - name: Install npm dependencies
               script: |         

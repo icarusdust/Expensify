@@ -17,9 +17,9 @@ workflows:
         #   cache_paths:
         #     - $CM_BUILD_DIR/node_modules
         pre_clone_scripts:
-          - name: Brioche
+          - name: Scripts before repository cloned
             script:
-              echo "bake brioche please"
+              echo "Hello Codemagic!"
         scripts:
             - name: Install npm dependencies
               script: |         

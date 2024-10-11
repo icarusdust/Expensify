@@ -4,10 +4,10 @@ workflows:
         max_build_duration: 120
         instance_type: mac_mini_m2
         environment:
-          groups:
-            - mars
-          android_signing:
-             - CM_KEYSTORE
+          # groups:
+          #   - mars
+          # android_signing:
+          #    - CM_KEYSTORE
         #   vars:
         #     PACKAGE_NAME: "io.codemagic.sample.reactnative" # <-- Put your package name here e.g. com.domain.myapp
           node: 20.15.1

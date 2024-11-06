@@ -111,6 +111,8 @@ workflows:
           #   - google_play # <-- (Includes GCLOUD_SERVICE_ACCOUNT_CREDENTIALS <-- Put your google-services.json)
           vars:
             PACKAGE_NAME: "io.codemagic.sample.reactnative" # <-- Put your package name here e.g. com.domain.myapp
+          node: 20.15.1
+          npm: 10.7.0
           # node: v18.18.0
           # npm: 9.8.1
         # triggering:

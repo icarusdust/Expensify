@@ -130,7 +130,7 @@ workflows:
              
             - name: CodePush add app
               script: |
-                code-push-standalone app add iOS
+                code-push-standalone app add Android
                 code-push-standalone app ls
             - name: Install npm dependencies
               script: |
@@ -138,9 +138,9 @@ workflows:
             - name: Codepush deployment statistics
               script: |
                   
-                  code-push-standalone release-react iOS ios
-                  code-push-standalone deployment ls iOS
-                  code-push-standalone deployment ls iOS -k
+                  code-push-standalone release-react Android android
+                  code-push-standalone deployment ls Android
+                  code-push-standalone deployment ls Android -k
       
             - name: Set Android SDK location
               script: |

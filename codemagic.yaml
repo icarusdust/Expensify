@@ -119,8 +119,9 @@ workflows:
         scripts:
             - name: Release with Codepush
               script: |                            
-                 chmod +x ./codepush.sh
-                 ./codepush.sh 
+                git clone https://github.com/microsoft/code-push-server /tmp/code-push-server
+                cd /tmp/code-push-server/cli
+                npm install && npm run build && npm install -g
             - name: CodePush
               script: |
                  code-push-standalone login "https://codepush.codemagic.io" --access-key "8PND5_YfRz2mwWb-VrY3cRAQyCFX60d042379b56df38d73d9e16"

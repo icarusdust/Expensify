@@ -4,10 +4,6 @@
     "appVersionSource": "remote"
   },
   "build": {
-    "base": {
-      "node": "20.15.1",
-      "yarn": "10.7.0"
-    },
     "development": {
       "developmentClient": true,
       "distribution": "internal"
@@ -16,7 +12,8 @@
       "distribution": "internal"
     },
     "production": {
-      "autoIncrement": true
+      "node": "18.18.0",
+      "npm": "10.7.0"
     }
   },
   "submit": {

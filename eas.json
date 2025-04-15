@@ -4,6 +4,10 @@
     "appVersionSource": "remote"
   },
   "build": {
+    "base": {
+      "node": "20.15.1",
+      "yarn": "10.7.0"
+    },
     "development": {
       "developmentClient": true,
       "distribution": "internal"

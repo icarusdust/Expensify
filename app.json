@@ -4,6 +4,10 @@
       "eas": {
         "projectId": "f65a1f99-d693-4db2-9e54-6ce7ee44a3e1"
       }
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "io.cm.expensify.chat"
     }
   }
 }

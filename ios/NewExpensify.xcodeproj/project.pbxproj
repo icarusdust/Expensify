@@ -1307,7 +1307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.cm.expensify.chat;
 				PRODUCT_NAME = "New Expensify Dev";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = CM_BENCHMARK;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Expensify_React;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1401,7 +1401,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 368M544MTT;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 368M544MTT;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X8NNQ9CYL2;
 				INFOPLIST_FILE = NewExpensify/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1418,7 +1418,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.cm.expensify.chat;
 				PRODUCT_NAME = "New Expensify";
 				PROVISIONING_PROFILE_SPECIFIER = "(NewApp) AppStore";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "(NewApp) AppStore";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Expensify_React;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2279,7 +2279,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 368M544MTT;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 368M544MTT;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X8NNQ9CYL2;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/NewExpensify/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -2297,7 +2297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.cm.expensify.chat;
 				PRODUCT_NAME = "New Expensify";
 				PROVISIONING_PROFILE_SPECIFIER = "(NewApp) AppStore";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "(NewApp) AppStore";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Expensify_React;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2428,7 +2428,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 368M544MTT;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 368M544MTT;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X8NNQ9CYL2;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/NewExpensify/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -2443,10 +2443,10 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.expensify.chat.adhoc;
+				PRODUCT_BUNDLE_IDENTIFIER = io.cm.expensify.chat.adhoc;
 				PRODUCT_NAME = "New Expensify AdHoc";
 				PROVISIONING_PROFILE_SPECIFIER = "(NewApp) AdHoc";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "(NewApp) AdHoc";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Expensify_React;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2571,7 +2571,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 368M544MTT;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 368M544MTT;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X8NNQ9CYL2;
 				INFOPLIST_FILE = NewExpensify/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2588,7 +2588,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.cm.expensify.chat;
 				PRODUCT_NAME = "New Expensify";
 				PROVISIONING_PROFILE_SPECIFIER = "(NewApp) AppStore";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "(NewApp) AppStore";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Expensify_React;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2710,7 +2710,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 368M544MTT;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 368M544MTT;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X8NNQ9CYL2;
 				INFOPLIST_FILE = NewExpensify/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2724,10 +2724,10 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.expensify.chat.adhoc;
+				PRODUCT_BUNDLE_IDENTIFIER = io.cm.expensify.chat.adhoc;
 				PRODUCT_NAME = "New Expensify AdHoc";
 				PROVISIONING_PROFILE_SPECIFIER = "(NewApp) AdHoc";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "(NewApp) AdHoc";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Expensify_React;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

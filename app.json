@@ -1,3 +1,7 @@
 {
-  "expo": {}
+  "expo": {
+    "ios": {
+      "bundleIdentifier": "io.cm.expensify.chat"
+    }
+  }
 }

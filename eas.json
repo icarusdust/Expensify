@@ -12,8 +12,7 @@
       "distribution": "internal"
     },
     "production": {
-      "node": "18.18.0",
-      "npm": "10.7.0"
+      "node": "20.15.1"
     }
   },
   "submit": {

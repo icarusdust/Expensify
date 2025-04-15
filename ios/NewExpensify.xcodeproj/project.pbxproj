@@ -1268,7 +1268,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.cm.expensify.chat;
 				PRODUCT_NAME = "New Expensify Dev";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = CM_BENCHMARK;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Expensify_React;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1493,7 +1493,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 368M544MTT;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X8NNQ9CYL2;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -1522,7 +1522,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.cm.expensify.chat.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "(NewApp) AppStore: Notification Service";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "*[expo] io.cm.expensify.chat.NotificationServiceExtension AppStore 2025-04-15T13:24:59.292Z";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -1659,7 +1659,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 368M544MTT;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X8NNQ9CYL2;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -1695,7 +1695,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.cm.expensify.chat.adhoc.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "(NewApp) AdHoc: Notification Service";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "*[expo] io.cm.expensify.chat.NotificationServiceExtension AppStore 2025-04-15T13:24:59.292Z";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -1746,7 +1746,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 368M544MTT;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X8NNQ9CYL2;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -1782,7 +1782,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.cm.expensify.chat.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "(NewApp) AppStore: Notification Service";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "*[expo] io.cm.expensify.chat.NotificationServiceExtension AppStore 2025-04-15T13:24:59.292Z";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -1912,7 +1912,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 368M544MTT;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X8NNQ9CYL2;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -1941,7 +1941,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.cm.expensify.chat.adhoc.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "(NewApp) AdHoc: Notification Service";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "*[expo] io.cm.expensify.chat.NotificationServiceExtension AppStore 2025-04-15T13:24:59.292Z";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -1992,7 +1992,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 368M544MTT;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X8NNQ9CYL2;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -2021,7 +2021,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.cm.expensify.chat.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "(NewApp) AppStore: Notification Service";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "*[expo] io.cm.expensify.chat.NotificationServiceExtension AppStore 2025-04-15T13:24:59.292Z";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;

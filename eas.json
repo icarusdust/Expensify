@@ -14,7 +14,8 @@
     "production": {
       "node": "20.15.1",
       "ios": {
-        "image": "latest"
+        "image": "latest",
+        "resourceClass": "large"
       }
     }
   },
